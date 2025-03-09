@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="svg-container">
+        <video class="video-background" autoplay loop muted>
+          <source src="./assets/video.mp4" type="video/mp4" />
+        </video>
+        <svg viewBox="0 0 400 210">
+            <defs>
+              <mask id="mask">
+                <rect width="400" height="210" x="0" fill="#fff"></rect>
+                <rect width="140" height="20" x="140" y="25" fill="red"></rect>
+                <rect width="70" height="20" x="105" y="50" fill="red"></rect>
+                <rect width="65" height="20" x="140" y="78" fill="red"></rect>
+                <rect width="233" height="20" x="153" y="103" fill="red"></rect>
+              </mask>
+            </defs>
+            <rect width="400" height="210" fill="#000" mask="url(#mask)"></rect>
+            <text font-weight="bold" fill="#fff">
+              <tspan x="10" y="40">We're here</tspan>
+              <tspan x="10" dy="1.2em">healthy</tspan>
+              <tspan x="10" dy="1.2em">so you can</tspan>
+              <tspan x="10" dy="1.2em">and happier</tspan>
+            </text>
+            <text font-weight="bold" fill="#fff">
+              <tspan x="285" y="40">to make</tspan>
+              <tspan x="184" y="68">living effortless</tspan>
+              <tspan x="217" y="93">live longer</tspan>
+            </text>
+          </svg>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
